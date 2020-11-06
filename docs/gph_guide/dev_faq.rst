@@ -122,7 +122,7 @@ No scripting
 Is this done via a gossip protocol or through a federate relay?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Each node immediately broadcast the data it receives to its peers after validating it
-https://github.com/cryptonomex/graphene/blob/master/libraries/p2p/design.md
+
 
 
 .. _dev-faq12:
@@ -183,7 +183,7 @@ What is the standard Graphene address structure and format?
 
 address = 'GPH'+base58(ripemd(sha512(compressed_pub)))  (checksum obviated)
 
-But addresses are not used directly, instead you have an account (that can be controlled by one or more address, pubkey or another account). ** Read more about `Dynamic Account Permissions <https://bitshares.org/technology/dynamic-account-permissions>`_
+But addresses are not used directly, instead you have an account (that can be controlled by one or more address, pubkey or another account).
 
 .. _dev-faq18:
 
