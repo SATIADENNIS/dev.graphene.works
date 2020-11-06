@@ -29,12 +29,6 @@ SPV (Simple Payment Verification)
 * `SPV Feature and discussion  <https://github.com/graphene-blockchain/graphene-core/wiki/SPV>`_
 
 
-Testing HF
-====================
-
-* `Testing HF 1268: Market Fee Sharing <https://github.com/graphene-blockchain/graphene-core/wiki/Testing-HF-1268:-Market-Fee-Sharing>`_
-* `Testing HF 1270: Effects of MCR Change on Call Price <https://github.com/graphene-blockchain/graphene-core/wiki/Testing-HF-1270:-Effects-of-MCR-Change-on-Call-Price>`_
-
 
 
 ------------------
