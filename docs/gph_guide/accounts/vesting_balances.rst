@@ -2,8 +2,7 @@
 Vesting Balances
 ===================
 
-In Graphene 2.0, some balances are vesting over time. This feature has been introduced initially in Graphene 1 when merging several blockchain businesses into one blockchain.
-
+In Graphene, some balances are vesting over time.
 
 
 .. contents:: Table of Contents
