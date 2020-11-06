@@ -34,8 +34,6 @@
     gph_guide/tutorials/index
     gph_guide/index_faq
     knowledge_base/index_kb
-    references/githubrepo
-    references/tech_articles
 
 ---------
 
