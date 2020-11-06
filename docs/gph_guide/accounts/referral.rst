@@ -56,9 +56,9 @@ How can I do?
 
  * (3)- **or sending your referral link to people you want to refer to Graphene, your referral link would be**::
 
-		https://wallet.bitshares.org/?r=<your-account-name>
+		https://wallet.gph.ai/?r=<your-account-name>
 
-		(*You might want to use yow wallet address instead of "wallet.bitshares.org"*)
+		(*You might want to use yow wallet address instead of "wallet.gph.ai"*)
 
 
 **Example:**

@@ -58,7 +58,7 @@ Graphene Blockchain Foundation
 
 Graphene UI Wallet
 ====================
-- `Graphene UI wallet <https://wallet.bitshares.org>`_
+- `Graphene UI wallet <https://wallet.gph.ai>`_
 
 
 Graphene Block Exploer

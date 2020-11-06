@@ -21,7 +21,7 @@ This document purpose: To explain Graphene UI wallet Client and wallet types and
   - **Light Client** : Download and install Graphene wallet to your computer. **This does not mean that you will have a Local wallet.**
     - [Graphene-UI – Latest Release](https://github.com/graphene-blockchain/graphene-ui/releases)
   - **Web Client** : Access the network and open the wallet in the browsers.
-    - wallet.bitshares.org https://wallet.bitshares.org
+    - wallet.gph.ai https://wallet.gph.ai
   
 ## Graphene Wallet Types and Login   
 

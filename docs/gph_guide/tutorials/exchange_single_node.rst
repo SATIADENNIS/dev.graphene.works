@@ -31,7 +31,7 @@ The Graphene uses the DPOS consensus mechanism to vote for the block forge by th
 .. Note:: For the exchange, please use the wallet mode (Local Wallet) instead of the account mode  (Cloud Wallet) for the registered account, because the exchange needs to use some advanced functions and there will be problems in the account mode.
 
   - `Graphene-UI Release <https://github.com/graphene-blockchain/graphene-ui/releases>`_
-  - BitShare UI wallet:  https://wallet.bitshares.org
+  - BitShare UI wallet:  https://wallet.gph.ai
   - `Create an Account Guide <https://docs.gph.ai/en/latest/user_guide/create_account.html>`_
 
 

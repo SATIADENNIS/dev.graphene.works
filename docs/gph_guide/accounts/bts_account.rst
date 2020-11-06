@@ -26,7 +26,7 @@ Graphene UI Wallet
 
 If you create an account at one of Graphene partners, the account name will be available among Graphene partners.  So, you will be able to use the Graphene account name to communicate (e.g., sending fund) with **other Graphene account holders** like sending an email. The advantage of using account name is you, and other people can identify the account holder.
 
-- If you want to see the Graphene wallet, go to this link. It opens `BitShare UI wallet <https://wallet.bitshares.org>`_
+- If you want to see the Graphene wallet, go to this link. It opens `BitShare UI wallet <https://wallet.gph.ai>`_
 
 
 Identifier
