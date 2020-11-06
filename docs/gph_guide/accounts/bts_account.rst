@@ -26,21 +26,21 @@ Graphene UI Wallet
 
 If you create an account at one of Graphene partners, the account name will be available among Graphene partners.  So, you will be able to use the Graphene account name to communicate (e.g., sending fund) with **other Graphene account holders** like sending an email. The advantage of using account name is you, and other people can identify the account holder.
 
-- If you want to see the Graphene wallet, go to this link. It opens `BitShare UI wallet <https://wallet.gph.ai>`_
+- If you want to see the Graphene wallet, go to this link. It opens `Graphene UI wallet <https://wallet.gph.ai>`_
 
 
 Identifier
 -------------
 
-When you create a Graphene account, Graphene 2.0 registers the account name to the blockchain and also assigns an incrementing identifier (account id) during the registration. You will not need to remember the account_id while you use the Graphene wallet operations (i.e., send fund, place order, etc).
+When you create a Graphene account, Graphene registers the account name to the blockchain and also assigns an incrementing identifier (account id) during the registration. You will not need to remember the account_id while you use the Graphene wallet operations (i.e., send fund, place order, etc).
 
-If you want to know your acount_id. go to a `cryptofresh <https://www.cryptofresh.com/>`_ and search your account name. You will find your account id under your account name.
+If you want to know your acount_id. go to an explorer and search your account name. You will find your account id under your account name.
 
 
 *The identifier (account_id) comes with many advantages:*
 Besides improved scalability, we have separated the identity from the transaction authorizing signature. In practice, owning an account name is autonomous from being able to spend its funds. Furthermore, both rights (we call them permissions) can split among an arbitrary complex relation of people (we call them authorities) using weights and required thresholds.
 
-To separating authorities from identities, Graphene 2.0 can be much faster in processing delay while having much smaller transaction sizes. All participants are forced to have a named account on the blockchain. Also, most transactions are tied to the account name and can be linked to individuals (this includes transfers, trades, shorts, etc. but not stealthed transactions).
+To separating authorities from identities, Graphene can be much faster in processing delay while having much smaller transaction sizes. All participants are forced to have a named account on the blockchain. Also, most transactions are tied to the account name and can be linked to individuals (this includes transfers, trades, shorts, etc. but not stealthed transactions).
 
 |
 
