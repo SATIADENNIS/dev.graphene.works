@@ -19,12 +19,8 @@ The purpose of this site is to provide in-depth documentation about the Graphene
 
 - `Gph.ai <https://gph.ai/>`_
 - `Graphene Whitepaper <https://github.com/bitshares-foundation/bitshares.foundation/blob/master/download/articles/BitSharesBlockchain.pdf>`_
-- `Graphene Blockchain Foundation Announcements <http://www.bitshares.foundation/>`_
-- `Graphene Bug Bounty Program <https://hackthedex.io/>`_
 - `Graphene Documentation - Users Guide <http://docs.gph.ai/>`_
 - :ref:`Graphene Community <bitshares-communities>`
-- `Awesome Graphene Blockchain <https://github.com/bitshares/awesome-bitshares>`_
-- `Graphene News <https://news.gph.ai/>`_
 
 ----------------
 
