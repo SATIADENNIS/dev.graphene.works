@@ -23,7 +23,6 @@
     api/index_api
     development/testnets
     supports_dev/supports
-    development/bsip
     development/index_usecases
 
 -------
