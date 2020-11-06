@@ -103,21 +103,6 @@ Graphene can be made to function as a software, a network, a ledger, a bank, an 
 
 ----------------
 
-Graphene Cash Flow
-===================
-
-
-.. image:: ../../_static/output/Graphene-Cashflow2.png
-        :alt: Graphene Architecture
-        :width: 700px
-        :align: center
-
-|
-
-
-----------------
-
-.. _trx-performance-explorer:
 
 Blockchain Observation
 ===============================
@@ -129,9 +114,6 @@ Graphene Explorer shows Graphene Blockchain information. You can observe Graphen
 
 If you would like to see more detailed information, the Open Explorer offers other information tabs (i.e., Operations, Proxies, Markets, SmartCoins, UIAs, and Holders) to view.
 
-- `Cryptofresh  <https://www.cryptofresh.com/>`_
-- `Open Explorer <http://open-explorer.io/>`_
-- `bts.ai <https://bts.ai/>`_
 
 
 Blockchain Activity
