@@ -81,10 +81,10 @@ Use Windows SubSystem for Linux
 Support
 ========================================
 
-* Technical support is available in the `BitSharesTalk technical support subforum. <https://bitsharestalk.org/index.php?board=45.0>`_
+
 * Graphene Core bugs can be reported directly to the `issue tracker. <https://github.com/graphene-blockchain/graphene-core/issues>`_
 * Graphene UI bugs should be reported to the `UI issue tracker <https://github.com/graphene-blockchain/graphene-ui/issues>`_
-* Up to date online Doxygen documentation can be found at `Doxygen <https://bitshares.org/doxygen/hierarchy.html>`_
+
 
 
 |
