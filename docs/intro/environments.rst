@@ -26,7 +26,6 @@ Graphene Code and Files
    - **Graphene-FC** - Fast-compiling C++ library
    - **Graphene python** - Fully featured client-side library for the Graphene Blockchain - written entirely in python.
    - **Graphene-UI** - Fully featured Graphical User Interface / Reference Wallet for the Graphene Blockchain.
-   - **BSIPs** - Graphene Improvement Proposals and Protocols. These technical documents describe the process of updating and improving the Graphene blockchain and technical ecosystem.
    - **Graphenejs** - JavaScript tools for Graphene Encryption and Serialization.
    - **Graphenejs-ws** - Javascript websocket interface for Graphene
    - **Beet** - Beet is a stand-alone key/identity-manager and signing app for Graphene, heavily influenced by Scatter
@@ -38,9 +37,9 @@ Graphene Code and Files
 What's your interests?
 ========================
 
-What would you like to know more about Graphene Blockchain? Graphene Core is the Graphene blockchain implementation and command-line interface. If you are interested to know about Graphene blockchain background, history, and features, please visit `how.bitshares.works <https://docs.gph.ai/en/latest/#>`_ and `bitshares.org <https://bitshares.org/>`_ to read more information.
+What would you like to know more about Graphene Blockchain? Graphene Core is the Graphene blockchain implementation and command-line interface.
 
-If yo do not have a Graphene account yet, you can use Graphene UI wallet (`wallet.gph.ai <https://wallet.gph.ai>`_ ) or download a `Light Client Wallet <https://bitshares.org/download>`_  to create your Graphene account. Here is the latest `Graphene-UI – Release <https://github.com/graphene-blockchain/graphene-ui/releases>`_ information.
+If yo do not have a Graphene account yet, you can use Graphene UI wallet (`wallet.gph.ai <https://wallet.gph.ai>`_ ) to create your Graphene account. Here is the latest `Graphene-UI – Release <https://github.com/graphene-blockchain/graphene-ui/releases>`_ information.
 
 If your interests are trying and learning Graphene features, you might want to use Graphene TestNet to experience them. If you are a developer who is interested to contribute to the Graphene Core team, you could download a developer branch and learn more about Graphene-Core current Project might be a good start. Select an appropriate branch when you install Graphene-Core.
 
@@ -50,10 +49,8 @@ After you know which branch to download, your next step is the installation of G
         :alt: Graphene
         :width: 750px
         :align: center
+Check out the :ref:`Graphene communities <bitshares-communities>` and join to meet other GPH holders!
 
-BitSharea has great communities to support others and have discussions. Check out the :ref:`Graphene communities <bitshares-communities>` and join to meet other GPH holders!
-
-For security issues and bug bounty program, please visit `Hack the DEX <https://hackthedex.io/>`_ .
 
 |
 
@@ -72,7 +69,6 @@ Project Guide and Milestones
 - `Contribution Guide [DRAFT] <https://github.com/graphene-blockchain/graphene-core/wiki/Contribution-Guide>`_
 - `Project <https://github.com/graphene-blockchain/graphene-core/projects/6>`_
 - `Graphene-Core: current issues and requests <https://github.com/graphene-blockchain/graphene-core/issues>`_
-- `Milestones and Plans <https://github.com/graphene-blockchain/graphene-core/milestones>`_
 - `Graphene-Core Releases <https://github.com/graphene-blockchain/graphene-core/releases>`_
 
 
@@ -169,8 +165,8 @@ For a release,
 9. The **release** branch is merged into **master**, and a version tag is created on **master**. Create tag by git command line and then point the release to the created tag in github. This is needed for Docker to catch the new code.
 10. The **release** branch is merged back into **develop** and **hardfork**.
 11. The **release** branch is merged into **testnet**. This will produce a merge conflict for the hardfork dates, which must be resolved without changing the testnet hardfork date.
-12. Update online code documentation by using updated Doxyfile as config file in the master branch. Send pull request to https://github.com/bitshares/doxygen.bitshares.org with new content in html format. Send pull to https://github.com/graphene-blockchain/dev.graphene.works with new content in xml format.
-13. Update date of last core download page of bitshares.org site.
+12. Update online code documentation by using updated Doxyfile as config file in the master branch. Send pull request with new content in html format. Send pull to https://github.com/graphene-blockchain/dev.graphene.works with new content in xml format.
+13. Update date of last core download page.
 14. Create binaries for linux, macos and windows. Once the tag name is known create binaries for this 3 OS. Attach them to release notes.
 **Example**: https://github.com/graphene-blockchain/graphene-core/releases/tag/3.0.0 Binaries names for this release:
 
