@@ -90,12 +90,12 @@ Some numerical experimentation shows that the following choice of ``f``, which I
 
     f(v) = F(v) = (v-1) / 2 + 1
 
-	
-	
+
+
 ----------------
 
 (ref)
-- https://github.com/bitshares/bitshares-core/wiki/dpos-slot-tickets
+- https://github.com/graphene-blockchain/graphene-core/wiki/dpos-slot-tickets
 
 (Vikram Rajkumar edited this page on Jun 9, 2015 · 1 revision )
 

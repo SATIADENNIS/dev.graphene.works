@@ -7,26 +7,26 @@ Windows x64 CLI Tool
 
 
 .. contents:: Table of Contents
-   :local: 
+   :local:
 
 ------------------
 
-In this section, we will show you how to install cli-wallet tools for Windows and try several methods to get the data from blockchain. 
+In this section, we will show you how to install cli-wallet tools for Windows and try several methods to get the data from blockchain.
 
-How to install BitShares-Core CLI Tool
+How to install Graphene-Core CLI Tool
 ===========================================================
 
 CLI-Wallet on Windows (x64)
 -------------------------------------------
 
-1. Download the BitShares-Core-*-x64-cli-tools.zip file from https://github.com/bitshares/bitshares-core/releases
-2. Unzip the file to your workstation. (e.g., d:\BitShares\)
+1. Download the Graphene-Core-*-x64-cli-tools.zip file from https://github.com/graphene-blockchain/graphene-core/releases
+2. Unzip the file to your workstation. (e.g., d:\Graphene\)
 3. Download the **cacer.pem** file from Mozilla: https://curl.haxx.se/docs/caextract.html
-4. Save the file to the same folder you extracted the cli-tools. (e.g. d:\BitShares\)
+4. Save the file to the same folder you extracted the cli-tools. (e.g. d:\Graphene\)
 5. Open a Windows command prompt (cmd.exe)
-6. Navigate to your install directory. (e.g. d:\BitShares\)
-7. Set an environment variable by typing: `set SSL_CERT_FILE=d:/BitShares/cacert.pem`
-8. Start the wallet: `cli_wallet -s wss://{ANY VALID AUTHORITY}/ws`. For example, `cli_wallet -s wss://bitshares.openledger.info/ws`
+6. Navigate to your install directory. (e.g. d:\Graphene\)
+7. Set an environment variable by typing: `set SSL_CERT_FILE=d:/Graphene/cacert.pem`
+8. Start the wallet: `cli_wallet -s wss://{ANY VALID AUTHORITY}/ws`. For example, `cli_wallet -s wss://node.market.rudex.org`
 
 
 -------
@@ -39,7 +39,7 @@ Start the CLI-Wallet (in Windows command prompt)
 
 ::
 
-    >cli_wallet -s wss://bitshares.openledger.info/ws
+    >cli_wallet -s wss://node.market.rudex.org
 
 If you open the cli-wallet successfully, you will see similar messages and receive ``new >>>`` prompt. Set a password and unlock the cli-wallte.::
 
@@ -49,10 +49,10 @@ If you open the cli-wallet successfully, you will see similar messages and recei
     2029119ms th_a       main.cpp:140                  main                 ] nathan_pub_key: BTS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV
     2029121ms th_a       main.cpp:141                  main                 ] key_to_wif( nathan_private_key ): 5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3
     Starting a new wallet with chain ID 4018d7844c78f6a6c41c6a552b898022310fc5dec06da467ee7905a8dad512c8 (from egenesis)
-    2029128ms th_a       main.cpp:188                  main                 ] wdata.ws_server:   wss://bitshares.openledger.info/ws
+    2029128ms th_a       main.cpp:188                  main                 ] wdata.ws_server:   node.market.rudex.org
     2029807ms th_a       main.cpp:193                  main                 ] wdata.ws_user:  wdata.ws_password:
     Please use the set_password method to initialize a new wallet before continuing
-    new >>> 
+    new >>>
 
 - ``set_password``
 
@@ -159,10 +159,10 @@ General
 ::
 
     unlocked >>> gethelp "list_accounts"
-    
+
     Lists all accounts registered in the blockchain. This returns a list of all account names and their account ids, sorted by account name.
     Use the 'lowerbound' and limit parameters to page through the list. To retrieve all accounts, start by setting 'lowerbound' to the empty string '""', and then each iteration, pass the last account name returned as the 'lowerbound' for the next 'list_accounts()' call.
-    
+
     Parameters:
         lowerbound: the name of the first account to return. If the named account does not exist, the list will start at the account that comes after 'lowerbound' (type: const string &) limit: the maximum number of accounts to return (max: 1000) (type: uint32_t)
 
@@ -170,7 +170,7 @@ General
         a list of accounts mapping account names to account ids
 
     unlocked >>>
-	
+
 
 - ``gethelp``  - "save_wallet_file"
 
@@ -178,9 +178,9 @@ General
 
     unlocked >>> gethelp "save_wallet_file"
     gethelp "save_wallet_file"
-    
+
     Saves the current wallet to the given filename.
-    
+
     Parameters:
         wallet_filename: the filename of the new wallet JSON file to create or overwrite. If 'wallet_filename' is empty, save to the current filename. (type: string)
 
@@ -208,7 +208,7 @@ Wallet Calls
     false
     unlocked >>>
 
-	
+
 Account Calls
 -----------------
 
@@ -218,12 +218,12 @@ _ ``list_account_balances``  _(e.g. an existing user account "cedar036)_
 
     unlocked >>> list_account_balances "cedar036"
     list_account_balances "cedar036"
-    75.22668 BTS
-    3 OPEN.STEEM
+    75.22668 GPH
+    3 RUDEX.STEEM
 
     unlocked >>>
 
-	
+
 - ``get_acount``
 
 ::
@@ -283,7 +283,7 @@ _ ``list_account_balances``  _(e.g. an existing user account "cedar036)_
     }
     unlocked >>>
 
-	
+
 - ``get_account_id``
 
 ::
@@ -299,10 +299,10 @@ _ ``list_account_balances``  _(e.g. an existing user account "cedar036)_
 
     unlocked >>> get_account_history "cedar036" "4"
     get_account_history "cedar036" "4"
-    2018-01-12T23:48:57 Transfer 40.46468 BTS from blocktrades to cedar036   (Fee: 0.01662 BTS)    
-    2018-01-12T22:31:00 Transfer 3 OPEN.STEEM from tsugimoto0105 to cedar036   (Fee: 0.01662 BTS)
-    2017-12-25T18:56:03 Transfer 0.00100 BTS from cedar036 to sharebits17 -- could not decrypt memo   (Fee: 0.23700 BTS)
-    2017-12-25T17:44:15 Transfer 35 BTS from bitshares-users to cedar036   (Fee: 0.21851 BTS)
+    2018-01-12T23:48:57 Transfer 40.46468 GPH from blocktrades to cedar036   (Fee: 0.01662 GPH)
+    2018-01-12T22:31:00 Transfer 3 RUDEX.STEEM from tsugimoto0105 to cedar036   (Fee: 0.01662 GPH)
+    2017-12-25T18:56:03 Transfer 0.00100 GPH from cedar036 to sharebits17 -- could not decrypt memo   (Fee: 0.23700 GPH)
+    2017-12-25T17:44:15 Transfer 35 GPH from bitshares-users to cedar036   (Fee: 0.21851 GPH)
 
     unlocked >>>
 
@@ -323,11 +323,11 @@ Asset Calls
 
 - list_assets::
 
-    unlocked >>> list_assets "BTS" "2"
-    list_assets "BTS" "2"
+    unlocked >>> list_assets "GPH" "2"
+    list_assets "GPH" "2"
     [{
         "id": "1.3.0",
-        "symbol": "BTS",
+        "symbol": "GPH",
         "precision": 5,
         "issuer": "1.2.3",
         "options": {
@@ -356,7 +356,7 @@ Asset Calls
         "dynamic_asset_data_id": "2.3.0"
       },{
         "id": "1.3.368",
-        "symbol": "BTS.SHARE",
+        "symbol": "GPH.SHARE",
         "precision": 4,
         "issuer": "1.2.31073",
         "options": {
@@ -387,16 +387,16 @@ Asset Calls
     ]
     unlocked >>>
 
-	
+
 > Note: To list all assets, pass the empty string "" for the lowerbound to start at the beginning of the list, and iterate as necessary.
 
 - ``get_asset``::
 
-    unlocked >>> get_asset "BTS"
-    get_asset "BTS"
+    unlocked >>> get_asset "GPH"
+    get_asset "GPH"
     {
       "id": "1.3.0",
-      "symbol": "BTS",
+      "symbol": "GPH",
       "precision": 5,
       "issuer": "1.2.3",
       "options": {

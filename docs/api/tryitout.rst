@@ -2,23 +2,23 @@
 .. _bis-explorer-api-tryitout:
 
 ***********************************
-BitShares Explorer API - Try it out!
+Graphene Explorer API - Try it out!
 ***********************************
 
 
-The below links take you to BitShares API calls list page. They are ES Wrappers (i.e., Wrapper to expose **Elasticsearch** Bitshares node data to clients). On the page, you can select a call and set value(s) and try it out!
+The below links take you to Graphene API calls list page. They are ES Wrappers (i.e., Wrapper to expose **Elasticsearch** Graphene node data to clients). On the page, you can select a call and set value(s) and try it out!
 
 
-* BitShares Explorer API uses to query the **MAINNET** 
+* Graphene Explorer API uses to query the **MAINNET**
 
-  - https://explorer.bitshares-kibana.info/apidocs/ 
+  - https://explorer.bitshares-kibana.info/apidocs/
 
 
- 
-* BitShares Explorer Testnet API uses to query the **Public TESTNET** 
 
-  - http://148.251.10.231:5000/apidocs/ 
-  
+* Graphene Explorer Testnet API uses to query the **Public TESTNET**
+
+  - http://148.251.10.231:5000/apidocs/
+
 
 ------------
 
@@ -29,7 +29,7 @@ The below links take you to BitShares API calls list page. They are ES Wrappers 
 3. Click [Try it Out!]
 
 .. image:: ../../_static/structures/call-tryitout-1.png
-        :alt: BitShares API Call
+        :alt: Graphene API Call
         :width: 650px
         :align: center
 
@@ -40,10 +40,10 @@ The below links take you to BitShares API calls list page. They are ES Wrappers 
   - Response Body
   - Response Code
   - Response Headers
-  
+
 
 .. image:: ../../_static/structures/call-tryitout-2.png
-        :alt: BitShares API Call
+        :alt: Graphene API Call
         :width: 650px
         :align: center
 
@@ -52,7 +52,7 @@ The below links take you to BitShares API calls list page. They are ES Wrappers 
 
 This information also locates here - :ref:`explorer-wrappers`
 
-	
+
 |
 
 |

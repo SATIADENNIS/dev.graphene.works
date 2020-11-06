@@ -7,11 +7,11 @@
 
     intro/architectures
     intro/environments
-	
-    bts_guide/accounts/index_account	
+
+    gph_guide/accounts/index_account
     components/components
-	
----------	
+
+---------
 
 .. toctree::
     :caption: Development
@@ -25,29 +25,28 @@
     supports_dev/supports
     development/bsip
     development/index_usecases
-	
+
 -------
 
 .. toctree::
     :maxdepth: 2
     :caption: Guides
 
-    bts_guide/tutorials/index
-    bts_guide/index_faq
-    knowledge_base/index_kb		
-    references/githubrepo	
+    gph_guide/tutorials/index
+    gph_guide/index_faq
+    knowledge_base/index_kb
+    references/githubrepo
     references/tech_articles
 
 ---------
 
-	
-	
+
+
 .. toctree::
     :maxdepth: 2
     :caption: References
 
     references/info_comunities
-    references/info_bts_events
     knowledge_base/glossary
 
 

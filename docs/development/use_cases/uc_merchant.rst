@@ -6,13 +6,13 @@ Merchants
 *****************
 
 **Merchants** make use of the currency-denomintated assets of a Graphene network
-(e.g. BitShares). Similar to traditional payment solutions they let their
+(e.g. Graphene). Similar to traditional payment solutions they let their
 customers pay using bitUSD, bitEUR, or any other *stable* blockchain asset.
 
 .. contents:: Table of Contents
    :local:
-   
-   
+
+
 We here illustrate the steps necessary to securely operate as merchant.
 Merchants take funds from customers on the blockchain and deliver a good. Hence,
 a merchant should monitor the blockchain and be notified on incoming
@@ -23,8 +23,8 @@ For exchanges we recommend to also read :ref:`what-is-different` and
 :ref:`often-used-calls`.
 
 -----
-   
-   
+
+
 Protocols/API
 
 
@@ -81,9 +81,9 @@ After the account is identified enough keys to authorize a account must particip
 
  - The wallet generates a ``WALLET_ONETIMEKEY`` and derives a ``shared secret``
 with the ``SERVER_PUBLIC_KEY`` provided by the ``https://merchant.org`` via
-``${args}``. 
-- This `shared secret` is a provably "random" 512 bits of data that is only known to the wallet at this point in time. 
-- The wallet then gathers signatures on the ``shared secret`` from enough keys to authorize the account. 
+``${args}``.
+- This `shared secret` is a provably "random" 512 bits of data that is only known to the wallet at this point in time.
+- The wallet then gathers signatures on the ``shared secret`` from enough keys to authorize the account.
 - In the simple case this will be a single signature, but in more complex cases multi-factor authentication may be required.
 
 After gathering all of the signatures the wallet redirects the user to ``https://merchant.org/login_callback?a=${result}`` where ``result`` is an encoded JSON object containing the following information:
@@ -128,7 +128,7 @@ In this example, we assume
 
  - https://merchant.org is the service that host the server,
  - https://wallet.org is the wallet provider that host the server
- 
+
 Privacy Concerns
 -----------------------------
 
@@ -152,7 +152,7 @@ to the user.
        "to" : "merchant_account_name",
        "to_label" : "Merchant Name",
        "memo" : "Invoice #1234",
-       "currency": "BTS",
+       "currency": "GPH",
        "line_items" : [
             { "label" : "Something to Buy", "quantity": 1, "price" : "1000.00 SYMBOL" },
             { "label" : "10 things to Buy", "quantity": 10, "price" : "1000.00 SYMBOL" },
@@ -223,8 +223,8 @@ Example Python script
     from binascii import hexlify, unhexlify
 
     invoice = {
-        "to": "bitshareseurope",
-        "to_label": "BitShares Europre",
+        "to": "grapheneeurope",
+        "to_label": "Graphene Europre",
         "currency": "EUR",
         "memo": "Invoice #1234",
         "line_items": [
@@ -237,11 +237,11 @@ Example Python script
 
     compressed = lzma.compress(bytes(json.dumps(invoice), 'utf-8'), format=lzma.FORMAT_ALONE)
     b58 = base58encode(hexlify(compressed).decode('utf-8'))
-    url = "https://bitshares.openledger.info/#/invoice/%s" % b58
+    url = "https://market.rudex.org/#/invoice/%s" % b58
 
     print(url)
 
-   
+
 
 
 |

@@ -3,9 +3,9 @@
 Testnets
 **************
 
-BitShares offers an Open Public Testnet that has been deployed and is fully functional for anyone to join and test without using real BTS.  Instead, you will receive Testnet Core asset TEST.  The Open Public Testnet is a great space to start learning about BitShares-Core features and BitShares-UI wallet. 
+Graphene offers an Open Public Testnet that has been deployed and is fully functional for anyone to join and test without using real GPH.  Instead, you will receive Testnet Core asset TEST.  The Open Public Testnet is a great space to start learning about Graphene-Core features and Graphene-UI wallet.
 
-For the BitShares Testnet preparation, you should download a **testnet** branch from the BitShares-Core repository. The testnet branch files are for the Testnets to use.
+For the Graphene Testnet preparation, you should download a **testnet** branch from the Graphene-Core repository. The testnet branch files are for the Testnets to use.
 
 
 .. note:: The testnet branch files: include bug fixes or new features
@@ -16,37 +16,37 @@ For the BitShares Testnet preparation, you should download a **testnet** branch 
 Public Testnets
 -------------------------
 
-If you want to prepare a Public Testnet, you can simply download and use BitShares-Core's testnet branch. The testnet branch files have been prepared for the Public Testnet environment. 
+If you want to prepare a Public Testnet, you can simply download and use Graphene-Core's testnet branch. The testnet branch files have been prepared for the Public Testnet environment.
 
-If you want to register a public testnet account, go to this link (http://testnet.bitshares.eu/) to create BitShares Public UI wallet for the public testnet.
+If you want to register a public testnet account, go to this link (http://testnet.bitshares.eu/) to create Graphene Public UI wallet for the public testnet.
 
 
 .. toctree::
     :maxdepth: 2
 
     testnets/public_testnet
- 
--------------  
-  
+
+-------------
+
 Private Testnets
 -------------------------
 
 
 If you want to test the feature set of current mainnet without connecting to mainnet, you must start a new (private) network. The private testnet is suitable for building faster local testing environments and testing your applications.
 
-For a Private Testnet set up, you can download and use the testnet branch. However, you will have to set up necessary parameters' valuables for your Private Testnet **before** you start ``witness_node``. 
+For a Private Testnet set up, you can download and use the testnet branch. However, you will have to set up necessary parameters' valuables for your Private Testnet **before** you start ``witness_node``.
 
 
 .. toctree::
     :maxdepth: 2
- 
-    testnets/private_testnet-v2
-    
 
------------  
- 
-  
-Other References 
+    testnets/private_testnet-v2
+
+
+-----------
+
+
+Other References
 ------------------
 
 * :ref:`how-to-setup-python-lib` *also, how to Create MPAs/UIAs with Python)
@@ -58,8 +58,8 @@ Other References
 * :ref:`How witness Price Feeds work <witness-price-feeds>`
 * :ref:`explorer-wrappers`
 * :ref:`public-testnet-guide-2`
-	
-	
+
+
 -------
 
 

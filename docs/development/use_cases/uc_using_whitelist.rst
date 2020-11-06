@@ -7,7 +7,7 @@ Using Whitelists and Blacklists
 
 .. contents:: Table of Contents
    :local:
-   
+
 --------------------
 
 
@@ -48,13 +48,13 @@ It expects a `new_listing_status` from
 -------------
 
 
-Asset Market Whitelists 
+Asset Market Whitelists
 ========================
 
 An issuer of an user-issued-asset may want to restrict trading partners for his
 assets for legal reasons. For instance, a gateway for US dollar may not be
 allowed to let his customers trade USD against CNY because additional licenses
-would be required. Hence, in BitShares 2.0 we let issuers chose to restrict
+would be required. Hence, in Graphene 2.0 we let issuers chose to restrict
 trading partners with white- and black-lists.
 
 **Example**
@@ -91,7 +91,7 @@ Asset Market white-lists work with the following API call:
 
 .. _asset-user-whitelists:
 
-Asset User Whitelists 
+Asset User Whitelists
 ======================
 
 Asset User white- and black-lists serve the need for companies to restrict
@@ -102,7 +102,7 @@ asset desires, he may set a restriction so that only users on the white-list
 (and/or **not** on the blacklist) are allowed to hold his token.
 
 Instead of putting all verified accounts into the respective asset's white-list
-directly, BitShares 2.0 allows to define one or several white-list
+directly, Graphene 2.0 allows to define one or several white-list
 *authorities*. In practice, the white- and black-lists of these accounts are
 combined and serve as white- and black-lists for the asset.
 
@@ -116,7 +116,7 @@ providers.
 
 Let's assume user ``alice`` wants to own a gateways IOUs called ``G.USD`` which are
 restricted by a whitelists. Before being able to own ``G.USD``, ``alice`` needs
-to be white-listed by one of the authorities of ``G.USD``. 
+to be white-listed by one of the authorities of ``G.USD``.
 
 Defining an asset's list authorities
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

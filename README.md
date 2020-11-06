@@ -1,22 +1,22 @@
-# BitShares Developers Documentation Portal
+# Graphene Developers Documentation Portal
 
-Welcome to the documentation portal for the BitShares Blockchain. The content on this page is managed by the BitShares community and is constantly improved.
+Welcome to the documentation portal for the Graphene Blockchain. The content on this page is managed by the Graphene community and is constantly improved.
 
-[BitShares Developers Documentation Portal website](http://dev.bitshares.works/en/master/)
+[Graphene Developers Documentation Portal website](http://developers.gph.ai/en/latest/)
 
 ----------------
 
-[BitShares Documentation website](http://how.bitshares.works/en/master/)
+[Graphene Documentation website](https://docs.gph.ai)
 
 ### Releases
-- [BitShares-Core Release](https://github.com/bitshares/bitshares-core/releases)
-- [BitShares-UI Release](https://github.com/bitshares/bitshares-ui/releases)
+- [Graphene-Core Release](https://github.com/graphene-blockchain/graphene-core/releases)
+- [Graphene-UI Release](https://github.com/graphene-blockchain/graphene-ui/releases)
 
 ***
 
 ### Contributing 
 
-- [How to Contribute to BitShares Documentation Project](https://github.com/bitshares/dev.bitshares.works/blob/master/CONTRIBUTING.md)
+- [How to Contribute to Graphene Documentation Project](https://github.com/graphene-blockchain/dev.graphene.works/blob/master/CONTRIBUTING.md)
 
 
 ***

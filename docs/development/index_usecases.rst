@@ -20,19 +20,19 @@ Banks, exchanges and merchants are integrating with the Graphene technology alre
 Basic Knowledge
 =========================
 
-If you have not read `BitShares Documentation for all users <http://how.bitshares.works/en/latest>`_ (http://how.bitshares.works/en/latest), we recommend you to read through as your basic knowledge of BitShares. 
+If you have not read `Graphene Documentation for all users <https://docs.gph.ai/en/latest>`_ (https://docs.gph.ai/en/latest), we recommend you to read through as your basic knowledge of Graphene.
 
 We provide here the necessary information to securely operate as a merchant, trader, exchange, or fiat-gateway. The below-listed contents should be known to all of them before starting to integrate.
 
-* `What is different BitShares <http://how.bitshares.works/en/latest/technology/difference_bitshares.html>`_ (http://how.bitshares.works/en/latest)
+* `What is different Graphene <https://docs.gph.ai/en/latest/technology/difference_bitshares.html>`_ (https://docs.gph.ai/en/latest)
 
-	
+
 |
 
 ---------------------------
-	
+
 .. _use-cases-list:
-	
+
 Use Cases
 ========================
 
@@ -43,7 +43,7 @@ Use Cases
     use_cases/uc_merchant
     use_cases/uc_traders
 
-	
+
 ---------------
 
 .. toctree::
@@ -51,7 +51,7 @@ Use Cases
 
     use_cases/supporting_features
     use_cases/uc_using_whitelist
-	
+
 |
 
 |

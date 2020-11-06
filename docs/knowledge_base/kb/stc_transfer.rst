@@ -6,7 +6,7 @@ Transfer - smart contract
 
 "The transfer of asset from one account to another is one operation and a smart contract."
 
-In this section, we examine how worker proposal  smart contract was constructed. There are items and helpful steps to construct a smart contract. We want to list those items by examining BitShares blockchain components.
+In this section, we examine how worker proposal  smart contract was constructed. There are items and helpful steps to construct a smart contract. We want to list those items by examining Graphene blockchain components.
 
 * **Smart contract items**
 
@@ -42,56 +42,56 @@ Object Index and Search Call
 
 Operations
 ---------------------------------------------
-- transfer_operation 
+- transfer_operation
 - override_transfer_operation
 - blind_transfer_operation
-- transfer_from_blind_operation 
-- transfer_to_blind_operation 
+- transfer_from_blind_operation
+- transfer_to_blind_operation
 
 
 Validations
 ---------------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 
 
 Initialize Evaluators and Index
 ---------------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	void database::initialize_evaluators()
 	{
 	   _operation_evaluators.resize(255);
 	   register_evaluator<account_create_evaluator>()
 	   .......
-	}   
+	}
 
 
-.. code-block:: cpp 
-	
+.. code-block:: cpp
+
 	void database::initialize_indexes()
 	{
 	   reset_indexes();
-	   _undo_db.set_max_size( GRAPHENE_MIN_UNDO_HISTORY );    
+	   _undo_db.set_max_size( GRAPHENE_MIN_UNDO_HISTORY );
 
-	   .....   
-	}  
+	   .....
+	}
 
 
 	void database::init_genesis(const genesis_state_type& genesis_state)
 	{ try {
 	.....
 
-	}}	
-	
-   
+	}}
+
+
 Evaluators
 ---------------------------------------------
 
-- transfer_evaluator 
-- override_transfer_evaluator 
+- transfer_evaluator
+- override_transfer_evaluator
 - generic_evaluator
 - op_evaluator
 
@@ -99,7 +99,7 @@ Evaluators
 
 CLI Wallet Calls
 ---------------------------------------------
-- 
+-
 
 API calls
 ---------------------------------------------

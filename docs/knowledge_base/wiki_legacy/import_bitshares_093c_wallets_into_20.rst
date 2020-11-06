@@ -1,7 +1,7 @@
-Import BitShares 0.9.3c wallets into BitShares 2.0 CLI wallet
+Import Graphene 0.9.3c wallets into Graphene 2.0 CLI wallet
 ==============================================================
 
-How to Import Large Wallets from BitShares 0.9.3
+How to Import Large Wallets from Graphene 0.9.3
 -----------------------------------------------------
 
 In bitshares 0.9.3c, run::

@@ -35,8 +35,8 @@ Imo it's better to set a threshold equals to (total_weight - approve_threshold) 
 
 * Findings/Result
 
-  - The operation will delete the proposal from the database. text is here: https://github.com/bitshares/bitshares-core/blob/master/libraries/chain/include/graphene/chain/protocol/proposal.hpp#L144-L154.
-  - and actual delete is at: https://github.com/bitshares/bitshares-core/blob/master/libraries/chain/proposal_evaluator.cpp#L206.
+  - The operation will delete the proposal from the database. text is here: https://github.com/graphene-blockchain/graphene-core/blob/master/libraries/chain/include/graphene/chain/protocol/proposal.hpp#L144-L154.
+  - and actual delete is at: https://github.com/graphene-blockchain/graphene-core/blob/master/libraries/chain/proposal_evaluator.cpp#L206.
 
 ------
 
@@ -51,13 +51,13 @@ Got this message while trying to propose a proposal with an `approve_proposal` o
         {}
         th_a  proposal_evaluator.cpp:54 do_evaluate
 
-		
+
 The issue is probably caused by lack of size checking on `auth.key_auths` before `this line in proposal.cpp <https://github.com/cryptonomex/graphene/blob/2.0.160328/libraries/chain/protocol/proposal.cpp#L92>`_, imo the code could be::
 
     if( auth.key_auths.size() > 0 )
        o.emplace_back( std::move(auth) );
 
-	   
+
 To fix this issue, a hard fork is needed.
 
 * Findings/Result
@@ -72,7 +72,7 @@ To fix this issue, a hard fork is needed.
 
 * Issue
 
-In `this line <https://github.com/bitshares/bitshares-core/blob/master/libraries/chain/db_block.cpp#L295>`_, we throw an exception with (proposal) but we might have deleted proposal in a `previous line <https://github.com/bitshares/bitshares-core/blob/master/libraries/chain/db_block.cpp#L274>`_.
+In `this line <https://github.com/graphene-blockchain/graphene-core/blob/master/libraries/chain/db_block.cpp#L295>`_, we throw an exception with (proposal) but we might have deleted proposal in a `previous line <https://github.com/graphene-blockchain/graphene-core/blob/master/libraries/chain/db_block.cpp#L274>`_.
 
 * Findings/Result
 

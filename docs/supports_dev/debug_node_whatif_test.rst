@@ -2,9 +2,9 @@
 .. _what-if-test:
 
 ************************************
-debug_node : what-if test tool 
+debug_node : what-if test tool
 ************************************
- 
+
 
 
 Introduction
@@ -34,11 +34,11 @@ Set up a new datadir with the following :ref: ``config.ini`` settings::
     seed-nodes = []
     # set apiaccess.json so we can set up
     api-access = "data/debug_datadir/api-access.json"
-	
 
-* Example of :ref:`configuration file parameters <bts-config-ini-eg>`  	
-	
-	
+
+* Example of :ref:`configuration file parameters <bts-config-ini-eg>`
+
+
 Then set up ``data/debug_datadir/api-access.json`` to allow access to the debug API like this:
 
 
@@ -66,7 +66,7 @@ Then set up ``data/debug_datadir/api-access.json`` to allow access to the debug 
        ]
     }
 
-	
+
 See :ref:`api-access-json` for more detail on the ``api-access.json`` format.
 
 Once that is set up, run ``debug_node`` against your newly prepared datadir::
@@ -95,7 +95,7 @@ Update `angel` account to be controlled by our own private key and generate a (f
 
     dbg_update_object {"_action":"update", "id":"1.2.1090", "active":{"weight_threshold":1,"key_auths":[["BTS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV",1]]}}
     import_key angel 5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3
-    transfer angel init0 999999 BTS "" true
+    transfer angel init0 999999 GPH "" true
 
 How it works
 ===============

@@ -1,11 +1,11 @@
 .. _build-windows:
 
 ************************************************
-Build BitShares-Core with Visual Studio 2015
+Build Graphene-Core with Visual Studio 2015
 ************************************************
 
 .. contents:: Table of Contents
-   :local: 
+   :local:
 
 ----
 
@@ -18,7 +18,7 @@ Environmental preparation
 Setup Visual Studio 2015 with Update 1
 ----------------------------------------
 
-*Known Issue: `There is a problem compiling with VS 2015 Update 3 <https://github.com/bitshares/bitshares-core/issues/389>`_
+*Known Issue: `There is a problem compiling with VS 2015 Update 3 <https://github.com/graphene-blockchain/graphene-core/issues/389>`_
 
 * **Download Visual Studio 2015 Update 1**
 
@@ -28,10 +28,10 @@ Setup Visual Studio 2015 with Update 1
 	Visual Studio Community 2015 with Update 1 (x86 and x64) - DVD (English)
 	SHA1: FB5AE6B57BDC495AFB29646AFCA088756363A263
 
-* **Virtual Drive Software to Load the above iso Files** 
+* **Virtual Drive Software to Load the above iso Files**
 
  If you do not have a virtual drive software, you can use WinCDEmu;
- 
+
  - Download from here: http://wincdemu.sysprogs.org/download/
 
 * **Installing Visual Studio 2015 Update 1**
@@ -42,15 +42,15 @@ Setup Visual Studio 2015 with Update 1
 Download Software and Tools
 ----------------------------------------
 
-* **Active perl** 
+* **Active perl**
 
- - Download and install 
+ - Download and install
 
  If you do not have `perl` software in your machine, install it. You'll need it later.::
 
         https://www.activestate.com/activeperl/downloads
 
-* **NASM** 
+* **NASM**
 
  - Download and install NASM
 
@@ -62,7 +62,7 @@ Download Software and Tools
 
 * **OpenSSL**
 
- BitShares Core depends on OpenSSL version 1.0.1 or 1.0.2, and you must build this from source. This article uses 1.0.1u as an example. Cannot use OpenSSL 1.1.0.
+ Graphene Core depends on OpenSSL version 1.0.1 or 1.0.2, and you must build this from source. This article uses 1.0.1u as an example. Cannot use OpenSSL 1.1.0.
 
  *References*::
 
@@ -86,7 +86,7 @@ Download Software and Tools
 
 * **Boost**
 
- BitShares Core depends on the Boost libraries, only version 1.57 ~ 1.60. 1.57.0 is used here. ( 1.60 encountered a command line parameter parsing problem)
+ Graphene Core depends on the Boost libraries, only version 1.57 ~ 1.60. 1.57.0 is used here. ( 1.60 encountered a command line parameter parsing problem)
 
 
  - Download OpenSSL Source Code from;::
@@ -119,10 +119,10 @@ Build the Library Dependencies
  - Run **VS2015 x64 Native Tools Command Prompt**
 
  **Note:** It is actually a shortcut, here: C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Visual Studio 2015\Visual Studio Tools\Windows Desktop Command Prompts.  Content is::
-    
+
     %comspec% /k ""C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat"" amd64
 
- - Execute the following command in the open command line interface 
+ - Execute the following command in the open command line interface
 
  **Please modify the actual directory according to the actual situation.**::
 
@@ -173,15 +173,15 @@ Build the Library Dependencies
        Https://git-scm.com/download/win
 
 
-BitShares-Core
+Graphene-Core
 ----------------------------------------
 
-* **Download and Install BitShares-Core Source code**
+* **Download and Install Graphene-Core Source code**
 
  Find and run `Git Bash` from the Start menu. In the open command line interface, execute the following command::
 
     cd /c/bts
-    git clone https://github.com/bitshares/bitshares-core
+    git clone https://github.com/graphene-blockchain/graphene-core
     cd bitshares-core
     git checkout <LATEST_RELEASE_TAG>
     git submodule update --init --recursive
@@ -189,7 +189,7 @@ BitShares-Core
  **Note:**
 
  * Please modify the specific directory according to the actual situation
- * Please replace `<LATEST_RELEASE_TAG>` by the latest release version of bitshares-core. If you need to compile other versions, modify accordingly. Find [BitShares Core latest release](https://github.com/bitshares/bitshares-core/releases).
+ * Please replace `<LATEST_RELEASE_TAG>` by the latest release version of bitshares-core. If you need to compile other versions, modify accordingly. Find [Graphene Core latest release](https://github.com/graphene-blockchain/graphene-core/releases).
 
  **At the end of this, your base directory should look like this**::
 
@@ -216,13 +216,13 @@ Set up the Environment for Build
 	Set OPENSSL_INCLUDE_DIR=%OPENSSL_ROOT%\include
 	Set BOOST_ROOT=%GRA_ROOT%\boost_1_57_0
 	Set CMAKE_ROOT=%GRA_ROOT%\cmake-3.9.4-win64-x64
-	
+
 	Set DOXYGEN_ROOT=%GRA_ROOT%\doxygen-1.8.13.windows.x64.bin
-	
+
 	Set PATH=%BOOST_ROOT%\lib;%CMAKE_ROOT%\BIN;%DOXYGEN_ROOT%;%PATH%
 
 
- - Run **VS2015 x64 Native Tools Command Prompt** 
+ - Run **VS2015 x64 Native Tools Command Prompt**
 
  - Execute the below commands::
 
@@ -253,12 +253,12 @@ Set up the Environment for Build
 Visual Studio
 ----------------------------------------
 
-* **Build** 
+* **Build**
 
- - Compile Bitshares-core
+ - Compile Graphene-core
    - The default is `Debug` in the upper toolbar, modified to `Release`
    - another option mode is `x64` by default and does not require modification
- - Build two executable 
+ - Build two executable
    - In the Solution Explorer on the right side of the interface, scroll down to find **cli_wallet** and **witness_node**. Right-click and select build.
 
  After the compilation is complete, an executable file is generated::
@@ -278,7 +278,7 @@ Others
 
  * If you use `cli_wallet.exe` to connect to an API server that uses wss, you need to specify the PEM file that contains the server root certificate.
    - Refer this page - [CLI-Wallet on Windows (x64)](../installation/windows_cli_tool.md#cli-wallet-on-windows-x64)
-       
+
 --------
 
 
@@ -290,7 +290,7 @@ Note: This is a translation of the document contributed by Abit More. The origin
 
 Also, referenced the below
 
-- https://github.com/bitshares/bitshares-core/wiki/BUILD_WIN32
+- https://github.com/graphene-blockchain/graphene-core/wiki/BUILD_WIN32
 
 
 

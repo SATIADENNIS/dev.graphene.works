@@ -5,9 +5,9 @@
 Plugin - talk
 ********************************
 
-This section collects BitShares Plugin information
+This section collects Graphene Plugin information
 
-* `Discussion about "Create plugin script" <https://github.com/bitshares/bitshares-core/pull/1302>`_
+* `Discussion about "Create plugin script" <https://github.com/graphene-blockchain/graphene-core/pull/1302>`_
 
 
 
@@ -15,13 +15,13 @@ This section collects BitShares Plugin information
 Tools
 ===========================
 
-* `Template Plugin - (create a demo API hello) <https://github.com/bitshares/bitshares-core/blob/hello_plugin/libraries/plugins/hello/README.md>`_
- 
-  - A template for the use of the plugin system to create a new API. 
+* `Template Plugin - (create a demo API hello) <https://github.com/graphene-blockchain/graphene-core/blob/hello_plugin/libraries/plugins/hello/README.md>`_
+
+  - A template for the use of the plugin system to create a new API.
 
 
 
 
-	
+
 |
 

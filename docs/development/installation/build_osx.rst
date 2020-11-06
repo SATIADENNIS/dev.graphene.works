@@ -7,12 +7,12 @@ Building on OS X
 
 
 .. contents:: Table of Contents
-   :local: 
-   
+   :local:
+
 ----------------
 
 
-BitShares OS X Build Instructions
+Graphene OS X Build Instructions
 ==================================
 
 1. Install XCode and its command line tools
@@ -32,8 +32,8 @@ In OS X 10.11 (El Capitan) and newer, you will be prompted to install developer 
 
 4. Install dependencies::
 
-    brew install boost cmake git openssl autoconf automake 
-    brew link --force openssl 
+    brew install boost cmake git openssl autoconf automake
+    brew link --force openssl
 
 5. (Optional) To support importing Bitcoin wallet files:
 
@@ -43,19 +43,19 @@ In OS X 10.11 (El Capitan) and newer, you will be prompted to install developer 
 
     brew install google-perftools
 
-7. Clone the Bitshares repository::
+7. Clone the Graphene repository::
 
-    git clone https://github.com/bitshares/bitshares-core.git
+    git clone https://github.com/graphene-blockchain/graphene-core.git
     cd bitshares-core
 
-8. Build BitShares::
+8. Build Graphene::
 
     git submodule update --init --recursive
     cmake .
     make
 
-	
-.. Notes:: As mentioned elsewhere, Bitshares depends on the third-party libraries "Boost" and "OpenSSL". These libraries need to be in certain version ranges. At the moment, Boost needs to be **between 1.57 and 1.65**. OpenSSL needs to be in the **1.0.x range**.
+
+.. Notes:: As mentioned elsewhere, Graphene depends on the third-party libraries "Boost" and "OpenSSL". These libraries need to be in certain version ranges. At the moment, Boost needs to be **between 1.57 and 1.65**. OpenSSL needs to be in the **1.0.x range**.
 
 
 ------------

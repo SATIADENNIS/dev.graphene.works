@@ -8,16 +8,16 @@ Often used API Calls
    :depth: 3
 
 ------------
-   
+
 Overview
 ==================
 
 Some API calls that are most interesting for exchanges and gateways are listed
 in the following table. They are compared to their corresponding API calls in
-BitShares 1.0.
+Graphene 1.0.
 
 We will now take a look at some sample ouputs for some of the API calls in the
-table above. We recommend to read the following articles: 
+table above. We recommend to read the following articles:
 
 * :ref:`blockchain-objects-ids`
 * :ref:`wallet-api-calls`
@@ -353,11 +353,11 @@ the transaction ID along with the signed transaction.
 
 ----------------
 
-Correspondences with BitShares 1.0 Calls
+Correspondences with Graphene 1.0 Calls
 ------------------------------------------------
 
 +----------------------------------------+--------------------------------------------------------------------------+
-| BitShares 1.0 Calls                    | BitShares 2.0 Calls                                                      |
+| Graphene 1.0 Calls                     | Graphene 2.0 Calls                                                       |
 +========================================+==========================================================================+
 |``wallet_open``                         | n.a. (default ``wallet.json``)                                           |
 +----------------------------------------+--------------------------------------------------------------------------+

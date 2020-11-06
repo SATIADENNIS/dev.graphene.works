@@ -5,7 +5,7 @@ Windows Development Environment setup and build instruction
 ************************************************
 
 .. contents:: Table of Contents
-   :local: 
+   :local:
 
 ----
 
@@ -16,8 +16,8 @@ This is an informal build environment setup instruction, it is not recommended t
 * 64 bit windows operating system
 * Microsoft Visual C++ 2015 Update 1 - Download address can be found at https://gist.github.com/CHEF-KOCH/ebd07873bb4b343613db (the community
   edition will work, any newer version of visual studio will not work)
-  
-  
+
+
 * git for windows (Git-2.18.0-64-bit)
 * cmake (cmake-3.12.1-win64-x64)
 
@@ -50,7 +50,7 @@ The command above will compile the libcURL and install it to the C:\Program File
 
 ::
 
-	git clone https://github.com/bitshares/bitshares-core.git
+	git clone https://github.com/graphene-blockchain/graphene-core.git
 	git checkout develop
 	git submodule update --init --recursive
 	cmake  -G "Visual Studio 14 2015 Win64" -DBoost_USE_STATIC_LIBS=ON -DOPENSSL_CONF_SOURCE="C:\OpenSSL-Win64\bin\openssl.cfg" -DCURL_INCLUDE_DIR="C:\Program Files\CURL\include" -DCURL_LIBRARY="C:\Program Files\CURL\lib\libcurl_imp.lib" -DCURL_STATICLIB=ON

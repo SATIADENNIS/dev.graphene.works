@@ -9,10 +9,10 @@ Code Coverage Testing
 
 .. contents:: Table of Contents
    :local:
-   
+
 -------
 
-* `BitShares-Core Test folder on GitHub <https://github.com/bitshares/bitshares-core/tree/master/tests>`_
+* `Graphene-Core Test folder on GitHub <https://github.com/graphene-blockchain/graphene-core/tree/master/tests>`_
 
 
 Code Coverage Testing Information

@@ -2,7 +2,7 @@
 .. _boost-version-issue:
 
 *********************
-Boost Versions 
+Boost Versions
 *********************
 
 Supported Versions
@@ -10,12 +10,12 @@ Supported Versions
 
 * Boost version: between 1.58 and 1.69
 
-Versions of `Boost <http://www.boost.org/>`_ 1.58 through 1.69 are supported. Newer versions may work, but have not been tested. If your system came pre-installed with a version of Boost that you do not wish to use, you may manually build your preferred version and use it with BitShares by specifying it on the CMake command line. The following is an example::
+Versions of `Boost <http://www.boost.org/>`_ 1.58 through 1.69 are supported. Newer versions may work, but have not been tested. If your system came pre-installed with a version of Boost that you do not wish to use, you may manually build your preferred version and use it with Graphene by specifying it on the CMake command line. The following is an example::
 
     cmake -DBOOST_ROOT=/path/to/boost -DCMAKE_BUILD_TYPE=Release .
     make
 
-	
+
 The Boost which ships with Ubuntu 14.04 LTS (64-bit) is too old. You need to download the Boost tarball for Boost 1.57.0 (Note, 1.58.0 requires C++14 and will not build on Ubuntu 14.04 LTS (64-bit); this requirement was an accident, see this mailing list post).
 
 ::
@@ -34,9 +34,9 @@ Build with specific Boost version::
 
 	cmake -DBOOST_ROOT="$BOOST_ROOT" -DCMAKE_BUILD_TYPE=Release .
 	make
-		
-		
-	
+
+
+
 -------------
 
 Known Issues
@@ -52,8 +52,8 @@ bitshares-core
 
    - ``./cli_wallet -s ws://1.2.3.4:5678/`` works with boost 1.57 and 1.58, but doesn't work with 1.60
    - ``./cli_wallet -sws://1.2.3.4:5678/`` works with boost 1.57, 1.58 and 1.60
-   
-- ``time_point_sec`` jsonifies to different result in boost 1.64, as mentioned in `#597 <https://github.com/bitshares/bitshares-core/issues/597>`_ 
+
+- ``time_point_sec`` jsonifies to different result in boost 1.64, as mentioned in `#597 <https://github.com/graphene-blockchain/graphene-core/issues/597>`_
 
 .. note:: This document is for users of witness_node and cli_wallet, not for the core developers.
 

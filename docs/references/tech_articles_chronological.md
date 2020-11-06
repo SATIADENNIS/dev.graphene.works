@@ -17,8 +17,8 @@ Articles
 
 
 
-- [DevWork Update: BitShares Witness Monitor (06/2018)](https://steemit.com/bitshares/@clockwork/devwork-update-bitshares-witness-monitor) : by  @cloclwork
-- [Bitshares ElasticSearch Wrapper and Swagger (05/2018)](https://steemit.com/bitshares/@oxarbitrage/bitshares-elasticsearch-wrapper-and-swagger)  by @oxarbitrage
+- [DevWork Update: Graphene Witness Monitor (06/2018)](https://steemit.com/bitshares/@clockwork/devwork-update-bitshares-witness-monitor) : by  @cloclwork
+- [Graphene ElasticSearch Wrapper and Swagger (05/2018)](https://steemit.com/bitshares/@oxarbitrage/bitshares-elasticsearch-wrapper-and-swagger)  by @oxarbitrage
 - [Slides How to create smart contracts in graphene blockchains (05/2018)](https://steemit.com/bitshares/@oxarbitrage/slides-how-to-create-smart-contracts-in-graphene-blockchains)  by @oxarbitrage
 - [BitShares smart-coins and the pricefeed (05/2018)](https://steemit.com/bitshares/@clockwork/bitshares-smart-coins-and-the-pricefeed) by @cloclwork
 - [[pybitshares/uptick] How to add new on-chain features (02/2018)](https://steemit.com/bitshares/@xeroc/pybitshares-uptick-how-to-add-new-on-chain-features) by @xeroc
@@ -28,7 +28,7 @@ Articles
 - [Howto: Using Nginx to Load Balance Servers (08/2017)](https://steemit.com/witness-category/@full-steem-ahead/howto-using-nginx-to-load-balance-servers) : by @full-steem-ahead
 - [Steem transaction signing in a nutshell (2016)](https://steemit.com/steem/@xeroc/steem-transaction-signing-in-a-nutshell) by @xeroc 
 - [How the issuer of an IOU/UIA can transfer assets back to himself (2016)](https://steemit.com/bitshares/@xeroc/how-the-issuer-of-an-iouuia-can-transfer-assets-back-to-himself) : by xeroc
-- [Back to Algorithm Based Assets & Targeting BTS as an MPA’s reference asset!](https://steemit.com/bitshares/@cm-steem/back-to-algorithm-based-assets-and-targeting-bts-as-an-mpa-s-reference-asset) : by cm-steem
+- [Back to Algorithm Based Assets & Targeting GPH as an MPA’s reference asset!](https://steemit.com/bitshares/@cm-steem/back-to-algorithm-based-assets-and-targeting-bts-as-an-mpa-s-reference-asset) : by cm-steem
 - [BitShares UI Improvements (13 New Features, 45 Bug Fixes)](https://steemit.com/beyondbitcoin/@sc-steemit/bitshares-ui-improvements-13-new-features-45-bug-fixes): by cm-steem
 - [HERTZ Price Feed Script Updates! September 2017](https://steemit.com/bitshares/@cm-steem/hertz-price-feed-script-updates-september-2017) : by cm-steem
 - [HERTZ - Next area of investigation prior to production!](https://steemit.com/bitshares/@cm-steem/hertz-next-area-of-investigation-prior-to-production) : by cm-steem

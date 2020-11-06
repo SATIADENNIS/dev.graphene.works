@@ -5,7 +5,7 @@
 Wiki Legacy
 *****************************
 
-BitShares Core Wiki (searchable by this website)
+Graphene Core Wiki (searchable by this website)
 
 -----------------
 
@@ -17,8 +17,8 @@ BitShares Core Wiki (searchable by this website)
     creating-a-new-fba
     dpos-slot-tickets
     resolvable-bitassets
-    witness-rng	
-    witness-scheduler   
+    witness-rng
+    witness-scheduler
     architecture_wiki
     blacklizard_app_finarch
     blacklizard_app_ideas
@@ -39,4 +39,3 @@ BitShares Core Wiki (searchable by this website)
 |
 
 
- 

@@ -8,10 +8,10 @@ Glossary
 
 .. contents:: Table of Contents
    :local:
-   
+
 ---------------
 
-A 
+A
 -----
 API node
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -21,12 +21,12 @@ API node
 
 --------------
 
-B 
+B
 -----
- 
-BitShares Blockchain
+
+Graphene Blockchain
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-- "BitShares" --> "BitShares Blockchain"
+- "Graphene" --> "Graphene Blockchain"
 
 
 
@@ -37,30 +37,30 @@ Blockchain
 
 Block Producer
 ^^^^^^^^^^^^^^^^^^^^^^^^^
-- A witness get enough votes and became a block producer (a.k.a. active witness). 
- 
+- A witness get enough votes and became a block producer (a.k.a. active witness).
+
   - Block Producer or Active Witness (belongs to a voted-in witness and is configured with correct key)
-  
+
 
 
 Witness Nodes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-- A witness node would be a full-history node, and each witness validates a transaction and broadcasts it. Witness nodes provide the complete history and preserve it as a failsafe. 
+- A witness node would be a full-history node, and each witness validates a transaction and broadcasts it. Witness nodes provide the complete history and preserve it as a failsafe.
 - Witnesses can be categorized into two groups that would be determined how much votes they received.   If a witness gets enough votes, the witness becomes an active witness and can produce block(s). Therefore, we call active witnesses "Block Producers".
 
   - **Block Producer**  (a.k.a. active witness node) belongs to a voted-in witness and is configured with correct key.  Block producers are validating signatures and timestamping transactions by including them in a block and broadcast it when they get their turn "time slot".  Each time, block producers produce a block, they get paid for their services.
-  - Non-Block producer (a.k.a. standby witness node) is either a not-voted-in witness or a voted-in witness with a different key. If it gets enough votes then it's an active witness. 
-  
+  - Non-Block producer (a.k.a. standby witness node) is either a not-voted-in witness or a voted-in witness with a different key. If it gets enough votes then it's an active witness.
 
-BTS Holder
+
+GPH Holder
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-- "shareholder / stakeholders" --> "BTS Holder"
+- "shareholder / stakeholders" --> "GPH Holder"
 
 |
 
 --------------
 
-C  
+C
 -----
 
 CLI
@@ -69,7 +69,7 @@ CLI
 
 config.ini (in data-dir)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-- To generate a default config file: First, *delete* the current directory defined by your ``—data-dir`` switch, then restart ``witness_node``. A new config.ini file will be generated in that directory. 
+- To generate a default config file: First, *delete* the current directory defined by your ``—data-dir`` switch, then restart ``witness_node``. A new config.ini file will be generated in that directory.
 
 .. Note:: the above *delete* will also delete the ``/blockchain`` folder, so perhaps better to just locate the file fist, remove it and restart. Most of the parameters in the config have comments with descriptions and the default values
 
@@ -81,10 +81,10 @@ Consensus
 
 --------------
 
-D  
+D
 -----
 
-Docker 
+Docker
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 - Docker is meant for node operators. It makes it easier to deploy a new node and still allows configuration. I recommend mentioning it because docker is a term to most operators.  The Docker default config.ini is created when first launching the node. An example can be found in the /docker/ folder.
 
@@ -92,12 +92,12 @@ Docker
 
 --------------
 
-E 
+E
 -----
 
 Elasticsearch
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-- Elasticsearch is a search engine based on Lucene library. It provides a distributed, multitenant-capable full-text search engine with an HTTP web interface and schema-free JSON documents. (ref: `wiki <https://en.wikipedia.org/wiki/Elasticsearch>`_ ) 
+- Elasticsearch is a search engine based on Lucene library. It provides a distributed, multitenant-capable full-text search engine with an HTTP web interface and schema-free JSON documents. (ref: `wiki <https://en.wikipedia.org/wiki/Elasticsearch>`_ )
 
 
 ElasticSearch Plugin
@@ -108,7 +108,7 @@ ElasticSearch Plugin
 
 --------------
 
-F 
+F
 -----
 
 Faucet
@@ -119,37 +119,37 @@ Faucet
 
 Full Node
 ^^^^^^^^^^^^^^^^^^
-- Basically, nodes are keeping all transactions (histories) that have occurred on the blockchain and maintaining the integrity of a blockchain. A full node is a full-history node that loaded account history via configuration. 
+- Basically, nodes are keeping all transactions (histories) that have occurred on the blockchain and maintaining the integrity of a blockchain. A full node is a full-history node that loaded account history via configuration.
 
 
 |
 
 --------------
 
-G 
+G
 -----
 
-Genesis Block (in BitShares)
+Genesis Block (in Graphene)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-- BitShares 2.0 will be initialized with what is called a Genesis Block. That genesis block will be constructed from the balances of BitShares 1.0.
+- Graphene 2.0 will be initialized with what is called a Genesis Block. That genesis block will be constructed from the balances of Graphene 1.0.
 
 
-N 
+N
 -----
 
-Native Core Token BTS
+Native Core Token GPH
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-- BTS
+- GPH
 
 
-Nodes 
+Nodes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 * API Nodes (i.e., nodes with an open RPC port)
-   
+
   - Nodes with Full History (a.k.a. full nodes)
   - Nodes with Partial History
-  
+
 * Seed Nodes (i.e., nodes with an open P2P port)
 * Block Producing Nodes
 
@@ -162,7 +162,7 @@ Nodes
 
 --------------
 
-P 
+P
 -----
 
 plugins
@@ -177,29 +177,29 @@ Price feed
 
 --------------
 
-S 
+S
 -----
 
 Seed Nodes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 - Seed nodes are the first nodes of the network.It allows other nodes to get started by connecting to them.
-- In BitShares, a seed node is a node that accept incoming P2P connection. Its address is hard coded in the program, so when a new node starts, it will connect to the seed nodes by default. Every node (including seed nodes) tells the connected nodes where other nodes are, so all nodes can connect to each other.
+- InGraphene, a seed node is a node that accept incoming P2P connection. Its address is hard coded in the program, so when a new node starts, it will connect to the seed nodes by default. Every node (including seed nodes) tells the connected nodes where other nodes are, so all nodes can connect to each other.
 
 |
 
 --------------
 
-T 
+T
 -----
 Token
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-- "Asset" --> "Token" 
+- "Asset" --> "Token"
 
 |
 
 --------------
 
-U 
+U
 -----
 UI
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -211,13 +211,13 @@ Units
 
 unit test
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-- In BitShares-Core unit test files locate in a /test/ folder. They are meant to ensure that the code behaves the right way.
+- InGraphene-Core unit test files locate in a /test/ folder. They are meant to ensure that the code behaves the right way.
 
 |
 
 --------------
 
-W 
+W
 -----
 
 

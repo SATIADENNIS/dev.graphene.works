@@ -5,9 +5,9 @@ Exchanges, Bridges, and Gateways
 *************************************
 
 **Exchange**, **Bridges**, and **Gateways** represent business that trade or
-exchange assets that are located **inside** a Graphene network (e.g. BitShares)
+exchange assets that are located **inside** a Graphene network (e.g.Graphene)
 against assets that are **located** outside the blockchain network. For
-instance, exchanges trade ``BTS:BTC`` while bridges exchange ``bitBTC:BTC``.
+instance, exchanges trade ``GPH:BTC`` while bridges exchange ``bitBTC:BTC``.
 
 We here illustrate the steps necessary to securely operate as exchange or
 gateway. Gateways take Fiat and convert them to their corresponding bitAsset at
@@ -16,7 +16,7 @@ a fee and vice versa. For instance:
 1. A customer requests 100 bitUSD from a gateway
 2. The gateway sends an invoice with bank account details
 3. When the funds arrive at the gateway a percentage is taken as a fee and the
-   rest is transfered as bitUSD directly into the BitShares wallet of the
+   rest is transfered as bitUSD directly into the Graphene wallet of the
    customer.
 
 For exchanges we recommend to also read :ref:`what-is-different` and
@@ -28,13 +28,13 @@ For exchanges we recommend to also read :ref:`what-is-different` and
 
 .. contents:: Table of Contents
    :local:
-   
+
 ---------------
 
 Step-By-Step Instructions for Exchanges
 ============================================
 
-We here describe how to interface your exchange with BitShares step-by-step. We will link to a more detailed description where appropriate.
+We here describe how to interface your exchange with Graphene step-by-step. We will link to a more detailed description where appropriate.
 
 1.Installation
 ----------------
@@ -47,11 +47,11 @@ In this step-by-step instruction we assume you have successfully built from the 
 For security reasons we will run two daemons and a wallet according to these diagram:
 
 .. image:: exchange-demons.png
-        :alt: BitShares 
+        :alt: Graphene
         :width: 600px
         :align: center
-		
-		
+
+
 In this tutorial we will run all deamons and the wallet on the same machine and use different ports to distinguish them::
 
 * port ``8090``: trusted full node
@@ -63,13 +63,13 @@ Read more details :ref:`network-setups`.
 3. Trusted Full Node
 ---------------------
 
-The trusted full node is your entry point to the BitShares P2P network. It will hold the blockchain, connect to other peers, and will receive new blocks in *real-time*.::
+The trusted full node is your entry point to the Graphene P2P network. It will hold the blockchain, connect to other peers, and will receive new blocks in *real-time*.::
 
     ./programs/witness_node/witness_node --data-dir=trusted_node/ --rpc-endpoint="127.0.0.1:8090"
 
 .. Note:: Until the genesis block is integrated into the binary/souces, you may additionally need to download the genesis block from github and add the parameter ``--genesis-json <genesis.json>``.
 
-.. Note:: Unless the seed nodes are encoded into the binary, you may need to add a known seed node with ``-s xxx.xxx.xxx.xxx:yyy`` in order to initially connect to the P2P network. (See `Release Page <https://github.com/bitshares/bitshares-core/releases>`_)
+.. Note:: Unless the seed nodes are encoded into the binary, you may need to add a known seed node with ``-s xxx.xxx.xxx.xxx:yyy`` in order to initially connect to the P2P network. (See `Release Page <https://github.com/graphene-blockchain/graphene-core/releases>`_)
 
 > **Note:** To start a node with reduced RAM please see :ref:`Memory reduction for nodes <memory-nodes>`.
 
@@ -96,7 +96,7 @@ The wallet will be used to transfer assets to the customers. It connects to the 
                                      --rpc-http-endpoint="127.0.0.1:8092"
 
 |
-								 
+
 --------------------
 
 Query Blockchain for Required Data
@@ -114,9 +114,9 @@ and set a pass phrase:::
 This will generate a ``wallet.json`` file for you that can contain
 encrypted private keys to your account.
 
-Import the active key into BitShares 2 wallet:::
+Import the active key into Graphene 2 wallet:::
 
-    BitShares 2: >>> import_key <account-name> <active_private_key>
+   Graphene 2: >>> import_key <account-name> <active_private_key>
 
 This gives access to the funds stored in ``<account-name>``. We will
 need the memo private key later when watching deposits.
@@ -160,7 +160,7 @@ The operation payload, in this case, is:::
                 'from': 'BTS5TPTziKkLexhVKsQKtSpo4bAv5RnB8oXcG4sMHEwCcTf3r7dqE',
                 'message': '58a8a515041812071b2402a0bf67c5e8',
                 'nonce': 3324169168288624499,
-                'prefix': 'BTS',
+                'prefix': 'GPH',
                 'to': 'BTS5TPTziKkLexhVKsQKtSpo4bAv5RnB8oXcG4sMHEwCcTf3r7dqE'},
          'extensions': [],
          'from': '1.2.282',
@@ -178,9 +178,9 @@ can be obtained by:::
 
      amount_integer / 10 ** precision
 
-In the case above, the asset with id 1.3.0 is ``BTS`` which has
+In the case above, the asset with id 1.3.0 is ``GPH`` which has
 precision 5. Hence, the floating number transfered from account 1.2.282
-to 1.2.0 is 1.0000 BTS!
+to 1.2.0 is 1.0000 GPH!
 
 The optional memo is used to send an encrypted message along the
 transfer. To decode the memo, the receivers or senders private key (for
@@ -200,4 +200,4 @@ above).
 
 - Executing Transfers for Withdrawals
 
- For transfering funds, we recommend pybitshares. This python module enables all features required to operated on/with BitShares. The full documentation is available on `pybitshares.com <http://pybitshares.com>`_.
+ For transfering funds, we recommend pybitshares. This python module enables all features required to operated on/withGraphene. The full documentation is available on `pybitshares.com <http://pybitshares.com>`_.

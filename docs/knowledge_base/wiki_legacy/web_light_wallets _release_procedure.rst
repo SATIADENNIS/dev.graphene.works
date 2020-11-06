@@ -10,7 +10,7 @@ Release Notes
 
 Open Ledger wallet release:
 
-- Clone [openledger graphene-ui](https://github.com/openledger/graphene-ui)
+- Clone [rudex graphene-ui](https://github.com/openledger/graphene-ui)
 - Add upstream repo `git remote add cnx https://github.com/cryptonomex/graphene-ui`
 - Fetch upstream `git fetch cnx`
 - Merge upstream/master `git merge cnx/master`
@@ -23,7 +23,7 @@ Open Ledger wallet release:
 - Clone `https://github.com/cryptonomex/faucet` and checkout ol branch and install gems with bundle command
 - In faucet dir run `mina wallet` - this will deploy to 'ol' server (specified in `.ssh/config`)
 - Alternatively, copy the dist folder directly to the server: scp dist/* bitshares.openledger.info:/www/current/public/wallet/
-- Open [https://bitshares.openledger.info](https://bitshares.openledger.info/) and make sure there are no errors and version matches release tag
+- Open [https://market.rudex.org](https://market.rudex.org) and make sure there are no errors and version matches release tag
 
 Light wallets
 ------------------

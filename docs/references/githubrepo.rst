@@ -3,7 +3,7 @@
 Resources
 ====================================
 
-More BitShares related Resources
+More Graphene related Resources
 ---------------------------------
 
 .. list-table::
@@ -13,31 +13,31 @@ More BitShares related Resources
    * - Name
      - Note
      - Repository
-   * - `bitshares-latency <https://github.com/litepresence/extinction-event/blob/master/EV/bitshares-latency.py>`_ 
-     - BitShares Nodes list (source code)
-     - litepresence	 
-   * - `bitshares-infrastructure <https://github.com/blockchainbv/bitshares-infrastructure>`_ 
-     - Configuration for HAproxy with BitShares Health Monitor
+   * - `bitshares-latency <https://github.com/litepresence/extinction-event/blob/master/EV/bitshares-latency.py>`_
+     - Graphene Nodes list (source code)
+     - litepresence
+   * - `bitshares-infrastructure <https://github.com/blockchainbv/bitshares-infrastructure>`_
+     - Configuration for HAproxy with Graphene Health Monitor
      - blockchainbv
    * - `c-libp2p <https://github.com/Agorise?tab=repositories>`_
      - Implementation of libp2p in C
      - Agorise
-   * - `Bitshares-HUG-REST-API <https://github.com/BTS-CM/Bitshares-HUG-REST-API>`_
-     - A HUG REST API for the Bitshares network 
-     - BTS-CM
-   * - `ChainSquad GmbH <https://github.com/chainsquad>`_ 
+   * - `Bitshares-HUG-REST-API <https://github.com/GPH-CM/Bitshares-HUG-REST-API>`_
+     - A HUG REST API for the Graphene network
+     - GPH-CM
+   * - `ChainSquad GmbH <https://github.com/chainsquad>`_
      - Blockchain development and consultation
      - chainsquad
    * - `blockchain-telecom.graphene-core <https://github.com/Clementvale-LTD/blockchain-telecom.graphene-core/commit/35366d04f4529363e121366171edbebc846f9327>`_
-     - systemd service startup configuration and description is added  
+     - systemd service startup configuration and description is added
      - Clementvale-LTD
    * - `bitshares-witness-monitor <https://github.com/clockworkgr/bitshares-witness-monitor>`_
-     - A BitShares witness monitoring script with telegram integration written in JS. 
+     - A Graphene witness monitoring script with telegram integration written in JS.
      - clockworkgr
-   * - `blue-loader-python <https://github.com/LedgerHQ/blue-loader-python>`_ 
-     - Python Loader for Ledger Blue and Nano S 
+   * - `blue-loader-python <https://github.com/LedgerHQ/blue-loader-python>`_
+     - Python Loader for Ledger Blue and Nano S
      - LedgerHQ
-   * - `libp2p <https://github.com/libp2p>`_ 
+   * - `libp2p <https://github.com/libp2p>`_
      - Modular peer-to-peer networking stack (used by IPFS and others)
      - libp2p
    * - `extinction-event <https://github.com/litepresence/extinction-event/tree/master/metaNODE>`_
@@ -46,20 +46,20 @@ More BitShares related Resources
    * - `bitshares-ruby <https://github.com/MatzFan/bitshares-ruby>`_
      - bitshares-ruby
      - MatzFan
-   * - `peerplays - plugins <https://github.com/PBSA/peerplays/tree/master/libraries/plugins/>`_ 
-     - 
+   * - `peerplays - plugins <https://github.com/PBSA/peerplays/tree/master/libraries/plugins/>`_
+     -
      - PBSA
    * - `bitshares-ruby <https://github.com/rnglabs/bitshares-ruby>`_
-     - Gem to interact with Bitshares APIs. Porting to Graphene
+     - Gem to interact with Graphene APIs. Porting to Graphene
      - rnglabs
-   * - `slips <https://github.com/satoshilabs/slips/issues/49>`_ 
+   * - `slips <https://github.com/satoshilabs/slips/issues/49>`_
      - SLIP-0048 : Deterministic Key Hierarchy for Graphene-based Networks #49
      - satoshilabs
    * - `bts_tools <https://github.com/wackou/bts_tools>`_
-     - BitShares delegate tools 
+     - Graphene delegate tools
      - wackou
    * - name
-     - 
+     -
      - ---
 
 |
