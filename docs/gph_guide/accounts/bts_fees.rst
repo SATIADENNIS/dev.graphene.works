@@ -100,12 +100,5 @@ Issuers may optionally maintain a Fee Pool. The **Fee Pool is a pool of GPH** an
 If the assets fee pool is funded, the fees can be payed in the native UIA instead of GPH.
 
 
-Graphene Reserve Pool and Cashflow
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. image:: ../../_static/output/BitShares-Cashflow2.png
-        :alt: Graphene cashflow
-        :width: 700px
-        :align: center
 
 |
